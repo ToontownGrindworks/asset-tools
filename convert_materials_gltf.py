@@ -41,4 +41,4 @@ for root, dirs, files in os.walk("."):
     for file in files:
         if file.endswith(".glb") or file.endswith(".gltf"):
             gltfFile = os.path.join(root, file)
-            rename_materials(gltfFile, gltfFile)
+            rename_materials_gltf(gltfFile, gltfFile)
